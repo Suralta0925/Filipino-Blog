@@ -109,7 +109,7 @@ a:hover{
 }
 .Blog{
     padding-top:100px;
-    height: 100%;
+    height: fit-content;
     background-color: #e5dccd;
     /* Text Color = #091936 */
 }
@@ -262,7 +262,7 @@ header + .hero{
     align-items: center;
     }
     .Blog{
-        height: 100%;
+        height: fit-content;
     }
     .img2-container,
     .text2-container{

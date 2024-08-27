@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    border: 1px solid;
 }
 html{
     font-size: 18px;
@@ -18,7 +19,7 @@ header{
     width: 100vw;
     display:flex;
     align-items: center;
-    padding:.5rem 3rem .5rem 1rem;
+    padding:.5rem 1.5rem .5rem 1rem;
     margin:0;
     justify-content: space-between;
     background-color: #013d53;
@@ -108,12 +109,42 @@ a:hover{
     background-color: rgb(223, 149, 12);
 }
 .Blog{
-    height: 100vh;
-    background-color: aliceblue;
+    padding-top:100px;
+    height: 120vh;
+    background-color: #e5dccd;
+    /* Text Color = #091936 */
 }
 header + .hero{
     margin-top: 0;
 }
+.section2-header,
+.text2-container{
+    display: flex;
+    margin-bottom: 30px;
+    /* flex-direction: column; */
+}
+.text2-container{
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+.smaller{
+    font-size: 1.5rem;
+}
+.bigger{
+    font-size: 2.5rem;
+}
+.text2{
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #091936;
+}
+.paragraph{
+    font-size: clamp(18px,2vw,24px);
+    padding: 0 30px;
+}
+
 @media screen and (max-width:700px){
     :root{
         --bar-width:60px;
@@ -182,11 +213,13 @@ header + .hero{
         rotate: 45deg;
         width: var(--x-width);
         translate: 0 calc(var(--bar-height)/-2);
+        background-color: red;
     }
     .hamburger:has(input:checked)::after{
         rotate: -45deg;
         width: var(--x-width);
         translate: 0 calc(var(--bar-height)/2);
+        background-color: red;
     }
 
     .hamburger input{
@@ -207,7 +240,7 @@ header + .hero{
         position: fixed;
         transform: translateY(-200%);
         translate:-100%;
-        height: 30vw;
+        height: 40vw;
         max-width: 10rem;
         padding: 2rem 1rem;
         top: 70px;
@@ -219,5 +252,21 @@ header + .hero{
     }
     .hamburger:has(input:checked) + aside{
         transform: translateY(-2%);
+    }
+    .small{
+        margin-bottom: 8px;
+    }
+    .section2-header,
+    .text2-container{
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    .Blog{
+        height: 200vh;
+    }
+    .img2-container,
+    .text2-container{
+        text-align: center;
     }
 }

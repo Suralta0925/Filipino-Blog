@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    border: 1px solid;
 }
 html{
     font-size: 18px;
@@ -121,6 +120,7 @@ header + .hero{
 .text2-container{
     display: flex;
     margin-bottom: 30px;
+    justify-content: center;
     /* flex-direction: column; */
 }
 .text2-container{
@@ -130,10 +130,10 @@ header + .hero{
     height: 100%;
 }
 .smaller{
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem,2vw,3rem);
 }
 .bigger{
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem,3vw,4rem);
 }
 .text2{
     margin-bottom: 8px;
@@ -141,7 +141,7 @@ header + .hero{
     color: #091936;
 }
 .paragraph{
-    font-size: clamp(18px,2vw,24px);
+    font-size: clamp(10px,2vw,24px);
     padding: 0 30px;
 }
 
@@ -261,9 +261,6 @@ header + .hero{
     flex-direction: column;
     align-items: center;
     
-    }
-    .Blog{
-        height: 200vh;
     }
     .img2-container,
     .text2-container{

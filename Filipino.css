@@ -18,7 +18,7 @@ header{
     width: 100vw;
     display:flex;
     align-items: center;
-    padding:.5rem 3rem;
+    padding:.5rem 4rem .5rem 1rem;
     margin:0;
     justify-content: space-between;
     background-color: #013d53;
@@ -205,7 +205,7 @@ header + .hero{
     aside{
         transition: transform var(--animation-timing);
         position: fixed;
-        transform: translateY(-150%);
+        transform: translateY(-200%);
         translate:-100%;
         height: 30vw;
         max-width: 10rem;
@@ -214,6 +214,8 @@ header + .hero{
         right: -120px;
         background-color: var(--foreground);
         color: var(--background);
+        border-radius: 10px;
+        border: 1px solid black;
     }
     .hamburger:has(input:checked) + aside{
         transform: translateY(-2%);

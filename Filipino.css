@@ -18,7 +18,7 @@ header{
     width: 100vw;
     display:flex;
     align-items: center;
-    padding:.5rem 4rem .5rem 1rem;
+    padding:.5rem 3rem .5rem 1rem;
     margin:0;
     justify-content: space-between;
     background-color: #013d53;

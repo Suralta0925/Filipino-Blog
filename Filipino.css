@@ -147,13 +147,13 @@ header + .hero{
 
 @media screen and (max-width:700px){
     :root{
-        --bar-width:60px;
-        --bar-height:8px;
+        --bar-width:30px;
+        --bar-height:5px;
         --hamburger-gap:6px;
         --foreground:#62bebe;
         --background: #163e4d;
         --animation-timing: 200ms ease-in-out;
-        --hamburger-height: 36px;
+        --hamburger-height: 27px;
         --hamburger-margin:8px;
     }
     .device-big{
